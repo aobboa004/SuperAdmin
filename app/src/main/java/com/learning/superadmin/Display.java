@@ -51,7 +51,7 @@ public class Display extends AppCompatActivity {
         ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-
+                eventsList.clear();
                 for(DataSnapshot ds : dataSnapshot.getChildren())
                 {
                     Events event=ds.getValue(Events.class);

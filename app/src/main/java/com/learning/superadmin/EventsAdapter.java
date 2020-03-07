@@ -64,9 +64,10 @@ public class EventsAdapter extends ArrayAdapter<Events> {
         buttonApprove.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //ref.child(event.getId()).child("status").setValue("Approved");
+                ref.child(event.getId()).child("status").setValue("Approved");
                String s="Approved";
                StatusD.setText(s);
+
             }
         });
 
