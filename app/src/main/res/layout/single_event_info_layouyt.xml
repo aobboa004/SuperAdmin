@@ -114,6 +114,24 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/ticketpriceD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ticketprice" />
+
+            <TextView
+                android:id="@+id/ticketprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ticket Price :" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
             android:id="@+id/Rel1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
